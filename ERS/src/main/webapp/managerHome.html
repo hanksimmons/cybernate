@@ -1,0 +1,84 @@
+
+
+<html> 
+
+<head>
+	<meta charset="utf-8"/>
+	<title>Manager Home</title>
+</head>
+
+
+
+<!-- REGISTER EMPLOYEES || submit ID = "registerEmployee" || PARAM ID's "firstname" "lastname" "email" "password"-->
+
+<body>
+	<div>
+		<form method="post" action="register.registerEmployee" style="height: 103px;">
+			<input type="text" id="firstname" name="firstname"
+				placeholder="Firstname" /> <input type="text" id="lastname"
+				name="lastname" placeholder="Lastname"> <input type="text"
+				id="email" name="email" placeholder="Enter your email" /> <input
+				type="password" id="password" name="password"
+				placeholder="Enter your password" /> <input type="submit"
+				id="registerEmployee" value="Register Employee"
+				style="color: black; width: 147px; height: 40px">
+		</form>
+	</div>
+
+	<div id="registerSuccessDiv"></div>
+
+	<br>
+	<!-- VIEW ALL EMPLOYEES || submit ID = "viewEmployees" -->
+	<div>
+		<form method="post" action="viewEmployees.viewEmployee">
+			<input type="submit" id="viewEmployees" value="View All Employees">
+		</form>
+	</div>
+
+	<br>
+
+	<!-- MAKE REQUEST || submit ID = "submitRequest" || PARAM ID's "requestAmount" "requestBody" -->
+	<div>
+		<form method="post" action="MakeRequest.ajax>
+			<input type="text" id="requestAmount" name="requestAmount"
+				placeholder="How much $ would you like reimbursed?"> <input
+				type="text" id="requestBody" name="requestBody"
+				placeholder="What are we reimbursing you for?"> <input
+				type="submit" id="submitRequest" value="Submit Request">
+		</form>
+	</div>
+
+	<br>
+
+	<!-- VIEW PENDING REQUESTS || submit ID = "viewPendingRequests"  -->
+	<div>
+		<button type="button" id="viewPendingRequests">View Pending
+			Requests</button>
+	</div>
+
+	<h2>Requests</h2>
+
+	<table>
+		<tr>
+			<th>Employee</th>
+			<th>Amount</th>
+			<th>Reason</th>
+		</tr>
+		<tr>
+			<th></th>
+			<th></th>
+		</tr>
+	</table>
+
+	<div>
+		<button type="button" id="getEmployeeButton">Get Employee</button>
+	</div>
+
+	<div id="employeeDiv"></div>
+
+
+
+	<script type="text/javascript" src="resources/js/managerhome.js"></script>
+</body>
+
+</html>

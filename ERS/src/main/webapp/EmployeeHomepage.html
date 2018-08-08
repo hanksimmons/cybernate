@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Employee Home</title>
+</head>
+
+<body>
+	<!-- MAKE REQUEST || Submit ID = "submit Request" || PARAM ID's = "requestAmount" "requestBody"-->
+	<div>
+		<form method="post" action="MakeRequest.ajax">
+			<input type="text" id="requestAmount" name="requestAmount"
+				placeholder="How much $ would you like reimbursed?"> <input
+				type="text" id="requestBody" name="requestBody"
+				placeholder="What are we reimbursing you for?"> <input
+				type="submit" id="submitRequest" value="Submit Request">
+		</form>
+	</div>
+
+	<div>
+		<button type="button" id="logout">Logout</button>
+	</div>
+		<script type="text/javascript" src="resources/js/employeehome.js"></script>
+
+</body>
+
+</html>
